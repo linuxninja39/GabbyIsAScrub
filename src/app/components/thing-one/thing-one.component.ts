@@ -18,7 +18,7 @@ export class ThingOneComponent implements OnInit {
 
   getQuote() {
     this.dankQuotesService
-      .getMyDankQuote()
+      .getMyDankQuote('gabby is cute', 'other thing', 'bussy')
       .subscribe(
         value => {
           console.log('got quote from server', value);

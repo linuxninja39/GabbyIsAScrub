@@ -15,9 +15,10 @@ export class ThingTwoComponent implements OnInit {
   }
 
   getQuote() {
-    this
-      .dankQuotesService
-      .getMyDankQuote()
+    let myVar = 'coolness';
+    let myVar2 = 'megan is a cutie pie';
+    let myVar3 = 'yo dog';
+    this.dankQuotesService.getMyDankQuote(myVar, myVar2, myVar3)
       .subscribe(
         value => {
           console.log('got quote from server', value);
